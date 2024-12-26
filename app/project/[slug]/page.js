@@ -1,11 +1,11 @@
 import Markdown from "markdown-to-jsx"
-import getPostMetadata from "@/utils/getPostMetadata"
+import getProjectMetadata from "@/utils/getProjectMetadata"
 import React from "react"
 import fs from "fs"
 import matter from "gray-matter"
 
-function getPostContent(slug) {
-    const folder = "blog_posts/"
+function getProjectContent(slug) {
+    const folder = "project_posts/"
     const file = folder + `${slug}.md`
     const content = fs.readFileSync(file, 'utf8')
 
@@ -14,8 +14,8 @@ function getPostContent(slug) {
 }
 
 export const generateStaticParams = async () => {
-    const posts = getPostMetadata('blog_posts')
-    return posts.map((post) => ({slug:post.slug})) 
+    const projects = getProjectContent('project_posts')
+    return projects.map((project) => ({slug:project.slug})) 
 }
 
 export async function generateMetadata({params, searchParams}) {
@@ -25,16 +25,16 @@ export async function generateMetadata({params, searchParams}) {
     }
 }
 
-export default function BlogPage(props){
+export default function ProjectPage(props){
     const slug = props.params.slug
-    const post = getPostContent(slug)
-    console.log(post.content)
+    const project = getProjectContent(slug)
+    console.log(project.content)
 
     return(
         <main>
             <article>
                 <Markdown>
-                    {post.content}
+                    {project.content}
                 </Markdown>
             </article>
         </main>
