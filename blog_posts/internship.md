@@ -1,6 +1,6 @@
 ---
 title: "Speech and Language Internship"
-category: "internship"
+category: "💻 internship"
 description: "Day in the life as an intern"
 ---
 

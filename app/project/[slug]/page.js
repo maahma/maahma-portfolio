@@ -14,7 +14,7 @@ function getProjectContent(slug) {
 }
 
 export const generateStaticParams = async () => {
-    const projects = getProjectContent('project_posts')
+    const projects = getProjectMetadata('project_posts')
     return projects.map((project) => ({slug:project.slug})) 
 }
 
