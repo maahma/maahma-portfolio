@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Link from "next/link"
 import NavBar from "../components/NavBar"
 
 export const metadata: Metadata = {
@@ -15,7 +14,7 @@ export default function RootLayout({
 }>) {
 
 
-  let footer = (
+  const footer = (
     <footer>
       <p>Made with 💜 by <a href="https://www.linkedin.com/in/maaha-ahmad/" target="_blank">Maaha Ahmad</a></p>
     </footer>

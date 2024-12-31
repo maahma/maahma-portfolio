@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 const NavBar = () => {
     return (
@@ -28,7 +29,7 @@ const NavBar = () => {
 
                 <li>
                     <Link href="/hire-me">
-                        <p className="hire-me-button"><img className="sparkle-1" src="images/sparkles.svg" />hire-me<img className="sparkle-2" src="images/sparkles.svg" /></p>
+                        <p className="hire-me-button"><Image className="sparkle-1" src="images/sparkles.svg" alt="sparkle-icon" />hire-me<Image className="sparkle-2" src="images/sparkles.svg" alt="sparkle-icon" /></p>
                     </Link>
                 </li>
             </ul>

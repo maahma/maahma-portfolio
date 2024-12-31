@@ -18,7 +18,7 @@ export const generateStaticParams = async () => {
     return projects.map((project) => ({slug:project.slug})) 
 }
 
-export async function generateMetadata({params, searchParams}) {
+export async function generateMetadata(params) {
     const id = params?.slug ? ' . ' + params?.slug : ''
     return {
         title: `maaha ahmad ${id.replaceAll('_', ' ')}`
