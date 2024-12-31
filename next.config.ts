@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  ///testing
+  output: "export",
+  reactStrictMode: true,
+  basePath: "/maahma-portfolio"
+  ///testing
 };
 
 export default nextConfig;
