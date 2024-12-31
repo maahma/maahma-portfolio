@@ -273,7 +273,7 @@ main {
   -webkit-animation: jump 3s infinite;
   -moz-animation: jump 3s infinite;
   animation: jump 3s infinite;
-  animation-delay: 0s; /* Starts immediately */
+  animation-delay: 0s; 
   position: relative;
 }
 
@@ -281,7 +281,7 @@ main {
   -webkit-animation: jump 3s infinite;
   -moz-animation: jump 3s infinite;
   animation: jump 3s infinite;
-  animation-delay: 1s; 
+  animation-delay: 0.75s; 
   position: relative;
 }
 
@@ -289,7 +289,15 @@ main {
   -webkit-animation: jump 3s infinite;
   -moz-animation: jump 3s infinite;
   animation: jump 3s infinite;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
+  position: relative;
+}
+
+.cv-view{
+  -webkit-animation: jump 3s infinite;
+  -moz-animation: jump 3s infinite;
+  animation: jump 3s infinite;
+  animation-delay: 2.25s;
   position: relative;
 }
 
@@ -412,11 +420,91 @@ article div ul {
   list-style-position: inside;
 }
 
-footer {
+.hire-me-form{
   display: flex;
+  margin:0 auto;
+  margin-top: 50px;
+  max-width: 800px;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 24px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  justify-items: flex-end;
+  padding: 20px 0px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 40%;
+}
+
+input, textarea{
+  padding: 10px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 3px solid #dbccf8;
+  min-width: 250px
+}
+
+input:focus, textarea:focus{
+  border-bottom: 3px solid #ba63f9;
+}
+
+textarea{
+  height: 120px;
+}
+
+.submitbutton{
+  padding: 10px 20px;
+  width: 50%;
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgba(0,0,0,1);
+  box-shadow: 3px 3px 1px 1px pink, 3px 3px 1px 2px rgba(0,0,0,1);
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hire-me-p{
+  margin-top: 10px;
+  color: #b968d2;
+}
+
+.submitbutton:hover{
+  background: #dbccf8;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,1);
+}
+
+.result-form{
+  color: #b968d2;
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  padding-bottom: 20px;
   font-family: "Noto Serif", serif;
 }
 

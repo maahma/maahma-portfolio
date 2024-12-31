@@ -20,11 +20,11 @@ const NavBar = () => {
                     </Link>
                 </li>
 
-                <li>
+                {/* <li>
                     <Link href={`/cv`} >
                         <p>cv</p>
                     </Link>
-                </li>
+                </li> */}
 
                 <li>
                     <Link href="/hire-me">

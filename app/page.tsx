@@ -4,7 +4,9 @@ export default function Home() {
 
   return (
     <main>
+      <div className="codepic-container">
       <SelectCareer />
+      </div>
 
       <div className="introduction">
         <div className="intro-block">
@@ -15,9 +17,10 @@ export default function Home() {
         </div>
 
         <div className="contact-block">
-          <a href="mailto:maahaahmad99@gmail.com"><img className="mail" src="images/mail.svg" /></a>
+          <a href="mailto:maahaahmad99@gmail.com"><img className="mail" src="images/mail.svg"/></a>
           <a href="https://github.com/maahma" target="_blank"><img className="github" src="images/github.svg" /></a>
           <a href="https://www.linkedin.com/in/maaha-ahmad/" target="_blank"><img className="linkedin" src="images/linkedin.svg" /></a>
+          <a href="docs/MaahaCv.pdf" target="_blank" rel="noopener noreferrer"><img className="cv-view" src="images/viewcv.svg" /></a>
         </div>
       </div>
     </main>
