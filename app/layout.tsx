@@ -25,13 +25,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  // let header = (
-  //   <header>
-  //     <Link href="/">
-  //     <h1>maaha ahmad</h1>
-  //     </Link>
-  //   </header>
-  // )
 
   let footer = (
     <footer>
@@ -42,7 +35,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {/* {header} */}
         <NavBar />
         {children}
         {footer}

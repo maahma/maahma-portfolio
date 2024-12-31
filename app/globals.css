@@ -3,12 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #e8d9ed;
+  /* background-color: #e8d9ed; */
+  background-color: #f5e5f2;
 }
 
 body {
@@ -47,6 +50,75 @@ footer {
   gap: 25px;
 }
 
+.nav-bar li{
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-bar li:hover{
+  transform: scale(1.1);
+  color: #EA738DFF;
+}
+
+.hire-me-button{
+  position: relative;
+  box-shadow: 0 0 0 #fec1958c;
+  transition: all .3s ease-in-out;
+}
+
+.sparkle-1{
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.sparkle-2{
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  bottom: 30%;
+  right: 20%;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.hire-me-button:hover {
+  background: transparent;
+  border: transparent;
+  box-shadow: 0 0 25px #fec1958c;
+}
+
+.hire-me-button:hover .sparkle-1{
+  position: absolute;
+  top: -70%;
+  left: -25%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.hire-me-button:hover .sparkle-2{
+  position: absolute;
+  bottom: -70%;
+  right: -25%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
 main {
   flex: 1;
   display: flex;
@@ -60,8 +132,6 @@ main {
 }
 
 .code-block{
-  /* border-top: 1px solid;
-  border-bottom: 1px solid; */
   border: 1px solid;
   width: 70%;
   border-color: #5b2a86;
@@ -168,6 +238,15 @@ main {
   color: #47126b;
 }
 
+.page-heading{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #47126b;
+  margin-bottom: 20px;
+}
+
 .intro-para, .intro-projects {
   font-family: "Noto Sans", serif;
   font-optical-sizing: auto;
@@ -181,10 +260,6 @@ main {
 .intro-para{
   color: #b968d2;
 }
-
-/* .intro-projects{
-  color: #499fdb;
-} */
 
 .contact-block{
   margin-top: 20px;
@@ -224,17 +299,14 @@ main {
   50%, 100% { bottom: 0px; }
 }
 
-.postsContainer {
+.postsContainer, .projectsContainer {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 14px;
-  margin:0 auto;
-  max-width: 800px;
-  width: 100%;
   margin-top: 30px;
 }
 
-.postCard {
+.postCard, .projectCard {
   padding: 14px;
   display: flex;
   flex-direction: column;
@@ -248,19 +320,17 @@ main {
   border-color: #5b2a86;
 }
 
-
-.postCard:hover {
+.postCard:hover, .projectCard:hover {
   box-shadow: 0 0 12px 4px rgba(130, 84, 187, 0.5), 0 0 24px 8px rgba(130, 84, 187, 0.3);
   border-color: rgba(130, 84, 187, 0.5);
-  /* transform: scale(1.02); */
 }
 
-.postCard>p {
+.postCard>p, .projectCard>p {
   flex: 1;
   color: #475569;
 }
 
-.post-title{
+.post-title, .project-title{
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -270,7 +340,7 @@ main {
   color: #47126b;
 }
 
-.post-description{
+.post-description, .project-description{
   font-family: "Noto Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -279,7 +349,7 @@ main {
     "wdth" 100;
 }
 
-.post-category{
+.post-category, .project-category{
   font-family: "Source Code Pro", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -288,12 +358,37 @@ main {
   color: #AB4BF1 !important;
   border: 1px solid transparent;
   padding: 1px 8px;
-  background-color: #F0E9FD;
+  background-color: #e2d8f6;
   border-radius: 8px;
   width: fit-content;
   display: flex;
   justify-content: start;
   align-items: center;
+}
+
+.posts-page, .projects-page{
+  margin:0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.category-btn{
+  font-family: "Source Code Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  color: #AB4BF1 !important;
+  border: 1px solid transparent;
+  padding: 1px 8px;
+  background-color: #e2d8f6;
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.category-btn:hover{
+  border: 1px solid #AB4BF1;
 }
 
 .statsContainer {
@@ -331,12 +426,12 @@ footer {
     gap: 24px;
   }
 
-  .postsContainer {
+  .postsContainer, .projectsContainer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
   }
 
-  .postCard {
+  .postCard, .projectCard {
     padding: 24px;
   }
 }

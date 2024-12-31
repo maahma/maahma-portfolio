@@ -28,7 +28,7 @@ const NavBar = () => {
 
                 <li>
                     <Link href="/hire-me">
-                        <p>hire-me</p>
+                        <p className="hire-me-button"><img className="sparkle-1" src="images/sparkles.svg" />hire-me<img className="sparkle-2" src="images/sparkles.svg" /></p>
                     </Link>
                 </li>
             </ul>
