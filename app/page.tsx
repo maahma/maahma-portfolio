@@ -10,7 +10,7 @@ export default function Home() {
         <figure className="profile-pic-container">
           <Image className="profile-img" src="/images/profile-pic.PNG" alt="profile-img" width={1000} height={1000}/>
           <figcaption className="profile-pic-caption">
-            Didn't have a cute pic of me, so here's the octopus I crocheted for now!
+            Didn&apos;t have a cute pic of me, so here&apos;s the octopus I crocheted for now!
           </figcaption>
         </figure>
       </div>
