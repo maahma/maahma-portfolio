@@ -11,7 +11,7 @@ export default function selectCareer(){
     };
 
     return (
-        <div className="code-block">
+      <div className="code-block">
         <div className="code">
           <p className="function-header">def <span>find_maaha_a_job</span>():</p>
           <p className="dream_roles-line">dream_roles = ["Software Engineer", "Machine Learning Engineer", "Cloud Engineer", "Data Scientist", "Crochet Artist"]</p>

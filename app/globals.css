@@ -54,7 +54,7 @@ footer {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
 }
 
@@ -119,16 +119,47 @@ footer {
   z-index: 2;
 }
 
-main {
+/* main {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+} */
+
+.home-page{
+  margin-top: 30px;
 }
 
-.introduction{
-  width: 70%;
-  margin-top: 50px;
+.codepic-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.codepic-container img{
+  width: 300px;
+  height: auto;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+
+figure{
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.profile-pic-caption{
+  font-size: 12px;
+  text-align: center;
+  /* width: 70%; */
+  /* border: 1px solid; */
+  margin: 0;
 }
 
 .code-block{
@@ -137,7 +168,6 @@ main {
   border-color: #5b2a86;
   overflow: hidden;
   border-radius: 10px; 
-  margin-top: 30px;
 }
 
 .code{
@@ -145,6 +175,7 @@ main {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-size: 18px;
   color: #EA738DFF;
   padding: 10px;
 }
@@ -199,7 +230,7 @@ main {
 
 .text-btn{
   background-color: #F1F3FFFF;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .job-btn:focus {
@@ -217,7 +248,7 @@ main {
   transform: translateY(2px);
 }
 
-.print-stmt-1{
+.print-stmt-1, .profile-pic-caption{
   color: #b968d2;
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -225,6 +256,11 @@ main {
   font-style: italic;
   font-variation-settings:
     "wdth" 100;
+  font-size: 18px;
+}
+
+.profile-pic-caption{
+  font-size: 12px;
 }
 
 .intro-line {
@@ -234,8 +270,13 @@ main {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  font-size: 30px;
+  font-size: 30px;                /*///// CHECK THIS /////*/
   color: #47126b;
+}
+
+.introduction{
+  width: 70%;
+  margin-top: 50px;
 }
 
 .page-heading{
@@ -243,21 +284,20 @@ main {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-size: 25px;
   color: #47126b;
   margin-bottom: 20px;
 }
 
-.intro-para, .intro-projects {
+.intro-para{
   font-family: "Noto Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+  font-size: 20px;
   margin-top: 15px;
-}
-
-.intro-para{
   color: #b968d2;
 }
 
@@ -266,7 +306,9 @@ main {
 }
 
 .contact-block img{
-  height: 35px;
+  height: 45px;
+  width: 45px;
+  /* border: 1px solid black; */
 }
 
 .mail {
@@ -344,7 +386,7 @@ main {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  font-size: 20px;
+  font-size: 24px;
   color: #47126b;
 }
 
@@ -352,6 +394,7 @@ main {
   font-family: "Noto Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-size: 20px;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -372,10 +415,12 @@ main {
   display: flex;
   justify-content: start;
   align-items: center;
+
+  font-size: 15px;                /*///// CHECK THIS /////*/
 }
 
 .posts-page, .projects-page{
-  margin:0 auto;
+  margin: 0 auto;
   max-width: 800px;
   width: 100%;
 }
@@ -393,6 +438,8 @@ main {
   border-radius: 8px;
   margin-right: 10px;
   cursor: pointer;
+
+  font-size: 15px;                /*///// CHECK THIS /////*/
 }
 
 .category-btn:hover{
@@ -431,7 +478,7 @@ article div ul {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 21px;
   justify-items: flex-end;
   padding: 20px 0px;
 }
@@ -448,7 +495,7 @@ input, textarea{
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
   border: none;
   border-bottom: 3px solid #dbccf8;
@@ -474,6 +521,7 @@ textarea{
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 18px;
 }
 
 .hire-me-p{
@@ -521,5 +569,110 @@ footer {
 
   .postCard, .projectCard {
     padding: 24px;
+  }
+}
+
+@media (max-width: 639px) {
+  body {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .codepic-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .codepic-container img{
+    display: none;
+  }
+
+  .code-block, .introduction{
+    width:100%;
+  }
+
+  .postsContainer, .projectsContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .projectCategories, .postCategories{
+    display: flex;
+  }
+
+  .postCard, .projectCard {
+    padding: 24px;
+  }
+
+  .hire-me-form{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top:0px;
+    width: 100%;
+    gap: 30px;
+  }
+
+  form{
+    margin-left: 0;
+    width: 100%;
+  }
+
+
+  .hire-me-button{
+    position: relative;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all .3s ease-in-out;
+  }
+  
+  .sparkle-1{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .sparkle-2{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    bottom: 30%;
+    right: 20%;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .hire-me-button:hover {
+    background: transparent;
+    border: transparent;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  .hire-me-button:hover .sparkle-1{
+    position: absolute;
+    top: -40%;
+    left: -25%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .hire-me-button:hover .sparkle-2{
+    position: absolute;
+    bottom: -40%;
+    right: -25%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
   }
 }

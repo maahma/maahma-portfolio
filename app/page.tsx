@@ -4,9 +4,15 @@ import Image from 'next/image';
 export default function Home() {
 
   return (
-    <main>
+    <main className="home-page">
       <div className="codepic-container">
-      <SelectCareer />
+        <SelectCareer />
+        <figure className="profile-pic-container">
+          <Image className="profile-img" src="/images/profile-pic.PNG" alt="profile-img" width={1000} height={1000}/>
+          <figcaption className="profile-pic-caption">
+            Didn't have a cute pic of me, so here's the octopus I crocheted for now!
+          </figcaption>
+        </figure>
       </div>
 
       <div className="introduction">
@@ -18,10 +24,10 @@ export default function Home() {
         </div>
 
         <div className="contact-block">
-          <a href="mailto:maahaahmad99@gmail.com"><Image className="mail" src="images/mail.svg" alt="mail-icon"/></a>
-          <a href="https://github.com/maahma" target="_blank"><Image className="github" src="images/github.svg" alt="git-icon"/></a>
-          <a href="https://www.linkedin.com/in/maaha-ahmad/" target="_blank"><Image className="linkedin" src="images/linkedin.svg" alt="linkedin-icon" /></a>
-          <a href="/docs/MaahaCV.pdf" target="_blank" rel="noopener noreferrer"><Image className="cv-view" src="images/viewcv.svg" alt="cv-icon" /></a>
+          <a href="mailto:maahaahmad99@gmail.com"><Image className="mail" src="images/mail.svg" alt="mail-icon" width={35} height={35} /></a>
+          <a href="https://github.com/maahma" target="_blank"><Image className="github" src="images/github.svg" alt="git-icon" width={35} height={35}/></a>
+          <a href="https://www.linkedin.com/in/maaha-ahmad/" target="_blank"><Image className="linkedin" src="images/linkedin.svg" alt="linkedin-icon" width={35} height={35} /></a>
+          <a href="/docs/MaahaCV.pdf" target="_blank" rel="noopener noreferrer"><Image className="cv-view" src="images/viewcv.svg" alt="cv-icon" width={35} height={35} /></a>
         </div>
       </div>
     </main>

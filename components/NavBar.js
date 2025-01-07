@@ -29,7 +29,7 @@ const NavBar = () => {
 
                 <li>
                     <Link href="/hire-me">
-                        <p className="hire-me-button"><Image className="sparkle-1" src="images/sparkles.svg" alt="sparkle-icon" />hire-me<Image className="sparkle-2" src="images/sparkles.svg" alt="sparkle-icon" /></p>
+                        <p className="hire-me-button"><Image className="sparkle-1" src="images/sparkles.svg" alt="sparkle-icon" width={35} height={35} />hire-me<Image className="sparkle-2" src="images/sparkles.svg" alt="sparkle-icon"  width={35} height={35}  /></p>
                     </Link>
                 </li>
             </ul>
