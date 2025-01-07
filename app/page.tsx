@@ -8,7 +8,7 @@ export default function Home() {
       <div className="codepic-container">
         <SelectCareer />
         <figure className="profile-pic-container">
-          <Image className="profile-img" src="/images/profile-pic.PNG" alt="profile-img" width={1000} height={1000}/>
+          <Image className="profile-img" src="images/profile-pic.PNG" alt="profile-img" width={1000} height={1000}/>
           <figcaption className="profile-pic-caption">
             Didn&apos;t have a cute pic of me, so here&apos;s the octopus I crocheted for now!
           </figcaption>
