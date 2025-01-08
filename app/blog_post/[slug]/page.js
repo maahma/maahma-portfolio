@@ -3,6 +3,7 @@ import getPostMetadata from "@/utils/getPostMetadata"
 import React from "react"
 import fs from "fs"
 import matter from "gray-matter"
+import Image from 'next/image'
 
 function getPostContent(slug) {
     const folder = "blog_posts/"
@@ -33,7 +34,7 @@ export default function BlogPage(props){
 
     // Custom component for handling images
     const imageComponent = ({ alt, src }) => {
-        return <img alt={alt} src={src} style={{ maxWidth: '100%', height: 'auto' }} />
+        return <Image src={src} alt={alt} width={1200} height={200} />
     }
 
     // Custom component for handling videos

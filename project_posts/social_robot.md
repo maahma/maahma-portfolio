@@ -11,11 +11,11 @@ Have you ever imagined studying with a robot that can talk to you, understand yo
 Using a **MERN stack application**, the **Furhat social robot**, and **FaceReader software**, I created a system that helps students manage their study schedules and stay on top of their academic goals—all while promoting emotional well-being. 
 
 Before I dive into the specifics, see the project in action:
-<video src="post-imgs/FurhatDemo.mp4"></video>
-<!-- <video controls width="600">
+
+<video controls width="600">
   <source src="post-imgs/FurhatDemo.mp4" type="video/mp4">
   Your browser does not support the video tag.
-</video> -->
+</video>
 Project code [here](https://github.com/maahma/Furhat-Study-Buddy)
 
 ## **The Core Components**
