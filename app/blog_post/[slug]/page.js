@@ -32,34 +32,29 @@ export default function BlogPage(props){
     const post = getPostContent(slug)
     console.log(post.content)
 
-    // Custom component for handling images
-    const imageComponent = ({ alt, src }) => {
-        return <Image src={src} alt={alt} width={1200} height={200} />
-    }
 
-    // Custom component for handling videos
-    const videoComponent = ({ src }) => {
-        return (
-            <video controls width="600">
-                <source src={src} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        )
+    const CustomMarkdown = ({ children }) => {
+        const renderers = {
+            img: ({ src, alt, width, height }) => (
+                <Image
+                    src={src} // adjust path as necessary
+                    alt={alt}
+                    width={width || 700} // default width
+                    height={height || 400} // default height
+                />
+            ),
+        }
+    
+        return <Markdown options={{ overrides: renderers }}>{children}</Markdown>
     }
 
     return(
         <main>
             <article>
-                <Markdown
-                options={{
-                    overrides: {
-                        img: { component: imageComponent },
-                        video: { component: videoComponent },
-                    }
-                }}
-                >
+                {/* <Markdown>   
                     {post.content}
-                </Markdown>
+                </Markdown> */}
+                <CustomMarkdown>{post.content}</CustomMarkdown>
             </article>
         </main>
     )
