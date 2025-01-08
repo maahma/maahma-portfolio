@@ -457,16 +457,6 @@ figure{
   text-decoration: none;
 }
 
-article div {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-article div ul {
-  list-style-position: inside;
-}
-
 .hire-me-form{
   display: flex;
   margin:0 auto;
@@ -543,6 +533,122 @@ textarea{
   font-style: italic;
   font-variation-settings:
     "wdth" 100;
+}
+
+article div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+article div ul {
+  list-style-position: inside;
+}
+
+article{
+  line-height: 1.8;
+}
+
+article h1,
+article h2,
+article h3{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+article h1{
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  color: #47126b;
+}
+
+article h2{
+  font-size: 1.7rem;
+  color: #6c3f8f;
+  margin-top: 15px;
+  /* margin-bottom: 15px; */
+}
+
+article h3{
+  font-size: 1.4rem;
+  color: #8c65a3;
+  margin-top: 8px;
+  /* margin-bottom: 10px; */
+}
+
+article p,
+article li{
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: #12366b;
+} 
+
+article p{
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+article p strong, article li strong {
+  color: #1a5aa6;
+  font-weight: bold;
+}
+
+article em {
+  font-style: italic;
+  color: #666;
+}
+
+article ul,
+article ol{
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+article ul li{
+  margin-bottom: 5px;
+  list-style-type: disc;
+}
+
+article ul ul li {
+  list-style-type: circle;
+  margin-top: 5px;
+}
+
+article a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+article video {
+  display: block;
+  margin: 20px 0;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 footer {

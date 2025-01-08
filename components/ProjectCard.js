@@ -9,11 +9,11 @@ export default function ProjectCard(props){
                 <p className="project-category">{project.category}</p>
                 <p className="project-description">{project.description}</p>
 
-                <div className="statsContainer">
+                {/* <div className="statsContainer">
                     <div>
                         
                     </div>
-                </div>
+                </div> */}
             </div>
         </Link>
     )
