@@ -11,10 +11,11 @@ Have you ever imagined studying with a robot that can talk to you, understand yo
 Using a **MERN stack application**, the **Furhat social robot**, and **FaceReader software**, I created a system that helps students manage their study schedules and stay on top of their academic goals—all while promoting emotional well-being. 
 
 Before I dive into the specifics, see the project in action:
-<video controls width="600">
+<video src="post-imgs/FurhatDemo.mp4"></video>
+<!-- <video controls width="600">
   <source src="post-imgs/FurhatDemo.mp4" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+</video> -->
 Project code [here](https://github.com/maahma/Furhat-Study-Buddy)
 
 ## **The Core Components**
@@ -47,7 +48,8 @@ Developed by Noldus, FaceReader detects and analyzes the six universal expressio
 
 ## Interaction between Components
 At high level the components interacted in the following way:
-<Image src="post-imgs/high-level-design.png" alt="High Level design of the interaction" width="700" >
+![High Level design of the interaction](post-imgs/high-level-design.png)
+<!-- <Image src="post-imgs/high-level-design.png" alt="High Level design of the interaction" width="700" > -->
 **Furhat Robot**  
 The Furhat Robot received requests from the MERN application. These requests dictated actions such as:
 
@@ -73,11 +75,13 @@ Getting the best results from OpenAI required carefully crafted prompts. This pr
 - Testing and refining prompts systematically
 
 For generating a study schedule, I designed the prompt(shown below) to include all the necessary details, such as the start and end times, tasks for each session, and the desired format for the output. This ensured I could easily extract relevant details and display them on the user interface. 
-<Image src="post-imgs/final-prompt.png" alt="Prompt for generating a study schedule for the week" width="700" >
+![Prompt for generating a study schedule for the week](post-imgs/final-prompt.png)
+<!-- <Image src="post-imgs/final-prompt.png" alt="Prompt for generating a study schedule for the week" width="700" > -->
 
 ## **Why This Project Matters**
 Have you ever wondered why it’s so hard to remember what you studied just a few days ago? German psychologist Hermann Ebbinghaus was curious about this too, which led him to uncover the _Forgetting Curve_.
-<Image src="post-imgs/forgetting-curve.png" alt="Prompt for generating a study schedule for the week" width="400" >
+![Prompt for generating a study schedule for the week](post-imgs/forgetting-curve.png)
+<!-- <Image src="post-imgs/forgetting-curve.png" alt="Prompt for generating a study schedule for the week" width="400" > -->
 
 This curve explains how memory fades over time—and, more importantly, how to stop it. His research showed that reviewing information at just the right moments, before it’s forgotten completely, can dramatically improve memory retention. This approach, known as _spaced learning_ or _distributed practice_, is a proven way to study smarter, not harder.
 
