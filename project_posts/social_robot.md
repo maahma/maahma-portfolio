@@ -48,7 +48,9 @@ Developed by Noldus, FaceReader detects and analyzes the six universal expressio
 
 ## Interaction between Components
 At high level the components interacted in the following way:
-![High Level design of the interaction](post-imgs/high-level-design.png)
+![High Level design of the interaction](/post-imgs/high-level-design.png)
+![Test](/images/profile-pic.png)
+
 <!-- <Image src="post-imgs/high-level-design.png" alt="High Level design of the interaction" width="700" > -->
 **Furhat Robot**  
 The Furhat Robot received requests from the MERN application. These requests dictated actions such as:
