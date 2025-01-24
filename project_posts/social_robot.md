@@ -82,7 +82,7 @@ For generating a study schedule, I designed the prompt(shown below) to include a
 
 ## **Why This Project Matters**
 Have you ever wondered why it’s so hard to remember what you studied just a few days ago? German psychologist Hermann Ebbinghaus was curious about this too, which led him to uncover the _Forgetting Curve_.
-![Prompt for generating a study schedule for the week](post-imgs/forgetting-curve.png)
+![Hermann Ebbinghaus's Forgetting Curve](post-imgs/forgetting-curve.png)
 <!-- <Image src="post-imgs/forgetting-curve.png" alt="Prompt for generating a study schedule for the week" width="400" > -->
 
 This curve explains how memory fades over time—and, more importantly, how to stop it. His research showed that reviewing information at just the right moments, before it’s forgotten completely, can dramatically improve memory retention. This approach, known as _spaced learning_ or _distributed practice_, is a proven way to study smarter, not harder.
