@@ -13,7 +13,7 @@ Using a **MERN stack application**, the **Furhat social robot**, and **FaceReade
 Before I dive into the specifics, see the project in action:
 
 <video controls width="600">
-  <source src="post-imgs/FurhatDemo.mp4" type="video/mp4">
+  <source src="../post-imgs/FurhatDemo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 Project code [here](https://github.com/maahma/Furhat-Study-Buddy)
@@ -75,11 +75,11 @@ Getting the best results from OpenAI required carefully crafted prompts. This pr
 - Testing and refining prompts systematically
 
 For generating a study schedule, I designed the prompt(shown below) to include all the necessary details, such as the start and end times, tasks for each session, and the desired format for the output. This ensured I could easily extract relevant details and display them on the user interface. 
-![Prompt for generating a study schedule for the week](/post-imgs/final-prompt.png)
+![Prompt for generating a study schedule for the week](../post-imgs/final-prompt.png)
 
 ## **Why This Project Matters**
 Have you ever wondered why it’s so hard to remember what you studied just a few days ago? German psychologist Hermann Ebbinghaus was curious about this too, which led him to uncover the _Forgetting Curve_.
-![Hermann Ebbinghaus's Forgetting Curve](/post-imgs/forgetting-curve.png)
+![Hermann Ebbinghaus's Forgetting Curve](../post-imgs/forgetting-curve.png)
 
 This curve explains how memory fades over time—and, more importantly, how to stop it. His research showed that reviewing information at just the right moments, before it’s forgotten completely, can dramatically improve memory retention. This approach, known as _spaced learning_ or _distributed practice_, is a proven way to study smarter, not harder.
 
