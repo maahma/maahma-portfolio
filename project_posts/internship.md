@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Internship - Part 1"
-category: "💻 internship"
+category: "🤖 machine learning"
 description: "Machine Learning meets the Business Sector"
 ---
 
