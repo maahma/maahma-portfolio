@@ -13,6 +13,7 @@
   background-color: #f5e5f2;
 }
 
+
 body {
   display: flex;
   flex-direction: column;
@@ -20,11 +21,16 @@ body {
   min-height: 100vh;
   color: #5b2a86;
   gap: 14px;
+
+  position: relative;
+}
+
+.hamburger-menu{
+  display: none;
 }
 
 .nav-bar,
-main,
-footer {
+main {
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
@@ -118,13 +124,6 @@ footer {
   z-index: 2;
 }
 
-/* main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 .home-page{
   margin-top: 30px;
 }
@@ -139,7 +138,6 @@ footer {
 .codepic-container img{
   width: 300px;
   height: auto;
-  /* border: 1px solid black; */
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -645,14 +643,18 @@ article video {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px;
-  padding-bottom: 20px;
+  padding: 25px 0px;
   font-family: "Noto Serif", serif;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  max-width: 800px;
 }
 
 @media (min-width: 640px) {
@@ -677,6 +679,19 @@ footer {
     gap: 24px;
   }
 
+  main{
+    margin-bottom: 30px;
+  }
+
+  .options{
+    display: none !important;
+    border: 1px solid black;
+  }
+
+  .hamburger-menu{
+    display: block;
+  }
+
   .codepic-container{
     flex-direction: column;
     justify-content: flex-start;
@@ -689,6 +704,34 @@ footer {
 
   .code-block, .introduction{
     width:100%;
+  }
+
+  .generate-job{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .print-stmt-1{
+    margin: 0px;
+    margin-top: 10px;
+  }
+
+  .intro-line {
+    font-size: 25px;
+    margin-top: 0;
+  }
+
+  .intro-para{
+    font-size: 18px;
+  }
+
+  .introduction{
+    margin-top: 30px;
+  }
+
+  .page-heading{
+    font-size: 24px;
   }
 
   .postsContainer, .projectsContainer {
@@ -704,6 +747,14 @@ footer {
     padding: 24px;
   }
 
+  .post-title, .project-title{
+    font-size: 20px;
+  }
+  
+  .post-description, .project-description{
+    font-size: 16px;
+  }
+
   .hire-me-form{
     flex-direction: column;
     justify-content: space-between;
@@ -713,11 +764,22 @@ footer {
     gap: 30px;
   }
 
+  input, textarea, .submitbutton{
+    font-size: 17px;
+  }
+
+  .hireme-sidetext h2{
+    font-size: 24px;
+  }
+
+  .hireme-sidetext p{
+    font-size: 18px;
+  }
+
   form{
     margin-left: 0;
     width: 100%;
   }
-
 
   .hire-me-button{
     position: relative;
@@ -773,5 +835,111 @@ footer {
     height: auto;
     filter: drop-shadow(0 0 10px #fffdef);
     z-index: 2;
+  }
+
+  article h1{
+    font-size: 1.7rem;
+  }
+  
+  article h2{
+    font-size: 1.4rem;
+  }
+  
+  article h3{
+    font-size: 1.2rem;
+  }
+  
+  article p,
+  article li{
+    font-size: 17px;
+  } 
+
+  article ul{
+    /* border: 1px solid black; */
+    margin-left: 0px;
+  }
+
+
+  #menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 70px;
+    right: 30px;
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;  
+    list-style: none;
+    background-color:  #f5e5f2;  
+    transition-duration: .25s;
+    z-index: 500;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    transition-duration: .25s;
+  }
+
+  .menu__item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #EA738DFF;
   }
 }

@@ -42,7 +42,7 @@ Developed by Noldus, FaceReader detects and analyzes the six universal expressio
 At a high level the components interacted in the following way:
 ![High Level design of the interaction](../post-imgs/high-level-design.png)
 
-**Furhat Robot**  
+### Furhat Robot  
 The Furhat Robot received requests from the MERN application. These requests dictated actions such as:
 
 - Greeting the user.
@@ -50,7 +50,7 @@ The Furhat Robot received requests from the MERN application. These requests dic
 - Quizzing the user whenever a quiz was generated.
 - Initiating a calming activity if the user appeared stressed.
 
-**MERN Application and FaceReader Software**
+### MERN Application and FaceReader Software
 
 When the user started a study session, the MERN application notified the FaceReader software to begin analyzing the user's emotions. If FaceReader detected a stress-related emotion, it sent a response back to the MERN application. The MERN application then relayed a request to Furhat to initiate an appropriate calming activity, helping the user relax.
 
@@ -60,7 +60,7 @@ To add intelligence to the system, I integrated OpenAI’s Large Language Model 
 - **Generating Quizzes:**  Questions derived from user-submitted notes made interactive learning sessions possible
 - **Furhat’s Conversations:** LLM powered the robot’s responses during calming activities, enabling it to engage empathetically and naturally
 
-### **Prompt Engineering: Making It Work**
+## **Prompt Engineering: Making It Work**
 Getting the best results from OpenAI required carefully crafted prompts. This process, known as **prompt engineering**, ensured that the outputs were accurate and useful. Key strategies for writing well-designed prompts include crafting clear and specific instructions, breaking complex tasks into manageable steps, and systematically testing and refining the prompts.
 
 For generating a study schedule, I designed the prompt(shown below) to include all the necessary details, such as the start and end times, tasks for each session, and the desired format for the output. This ensured I could easily extract relevant details and display them on the user interface. 
