@@ -9,10 +9,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-color: #e8d9ed; */
   background-color: #f5e5f2;
 }
-
 
 body {
   display: flex;
@@ -22,8 +20,6 @@ body {
   color: #5b2a86;
   gap: 14px;
   justify-content: flex-start;
-
-  /* position: relative; */
 }
 
 main{
@@ -308,7 +304,6 @@ figure{
 .contact-block img{
   height: 45px;
   width: 45px;
-  /* border: 1px solid black; */
 }
 
 .mail {
@@ -415,8 +410,18 @@ figure{
   display: flex;
   justify-content: start;
   align-items: center;
+  font-size: 15px;                
+}
 
-  font-size: 15px;                /*///// CHECK THIS /////*/
+.project-technology{
+  font-family: "Source Code Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: #1787d7 !important;
 }
 
 .posts-page, .projects-page{
@@ -438,18 +443,11 @@ figure{
   border-radius: 8px;
   margin-right: 10px;
   cursor: pointer;
-
-  font-size: 15px;                /*///// CHECK THIS /////*/
+  font-size: 15px;               
 }
 
 .category-btn:hover{
   border: 1px solid #AB4BF1;
-}
-
-.statsContainer {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
 }
 
 .unstyled {
@@ -548,6 +546,26 @@ article div ul {
 
 article{
   line-height: 1.8;
+}
+
+article img:first-child{
+  height: 45px;
+  width: 45px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% {  transform: rotate(359deg); }
+}
+
+article img:first-child:hover{
+  animation: spin 2s linear infinite;
+}
+
+article h1:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 article h1,
@@ -657,10 +675,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: absolute;
-  bottom: 0;
-  left: 50%; 
-  transform: translateX(-50%); */
   margin-top: auto;
   max-width: 800px;
 }
@@ -681,16 +695,11 @@ footer {
   }
 }
 
-/* @media (max-width: 639px)  */
 @media only screen and (max-width: 600px){
   body {
     padding: 24px;
     gap: 24px;
   }
-/* 
-  main{
-    margin-bottom: 30px;
-  } */
 
   .options{
     display: none !important;
@@ -734,17 +743,13 @@ footer {
   .intro-para{
     font-size: 18px;
   }
-/*   
-  .contact-block{
-    margin-bottom: 30px;
-  } */
 
   .page-heading{
     font-size: 24px;
   }
 
   .postsContainer, .projectsContainer {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 24px;
   }
 
@@ -762,6 +767,11 @@ footer {
   
   .post-description, .project-description{
     font-size: 16px;
+  }
+
+  .project-technology{
+    font-size: 15px;
+    color: #1787d7 !important;
   }
 
   .hire-me-form{
@@ -844,6 +854,11 @@ footer {
     height: auto;
     filter: drop-shadow(0 0 10px #fffdef);
     z-index: 2;
+  }
+
+  article img:first-child{
+    height: 35px;
+    width: 35px;
   }
 
   article h1{

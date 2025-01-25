@@ -15,6 +15,7 @@ export default function getProjectMetadata(basePath){
             title: matterResult.data.title,
             category: matterResult.data.category,
             description: matterResult.data.description,
+            technology: matterResult.data.technology,
             slug: fileName.replace('.md', "")
         }
     })

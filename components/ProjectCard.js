@@ -8,12 +8,7 @@ export default function ProjectCard(props){
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-category">{project.category}</p>
                 <p className="project-description">{project.description}</p>
-
-                {/* <div className="statsContainer">
-                    <div>
-                        
-                    </div>
-                </div> */}
+                <p className="project-technology">{project.technology}</p>
             </div>
         </Link>
     )
