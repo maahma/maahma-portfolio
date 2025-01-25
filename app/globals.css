@@ -21,6 +21,7 @@ body {
   min-height: 100vh;
   color: #5b2a86;
   gap: 14px;
+  justify-content: flex-start;
 
   /* position: relative; */
 }
@@ -511,6 +512,7 @@ textarea{
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
+  color: black;
 }
 
 .hire-me-p{
@@ -659,6 +661,7 @@ footer {
   bottom: 0;
   left: 50%; 
   transform: translateX(-50%); */
+  margin-top: auto;
   max-width: 800px;
 }
 
