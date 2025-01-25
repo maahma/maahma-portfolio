@@ -22,7 +22,11 @@ body {
   color: #5b2a86;
   gap: 14px;
 
-  position: relative;
+  /* position: relative; */
+}
+
+main{
+  flex: 1;
 }
 
 .hamburger-menu{
@@ -264,13 +268,14 @@ figure{
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  font-size: 30px;                /*///// CHECK THIS /////*/
+  font-size: 30px;                
   color: #47126b;
 }
 
 .introduction{
   width: 70%;
   margin-top: 50px;
+ 
 }
 
 .page-heading{
@@ -650,10 +655,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   left: 50%; 
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   max-width: 800px;
 }
 
@@ -673,15 +678,16 @@ footer {
   }
 }
 
-@media (max-width: 639px) {
+/* @media (max-width: 639px)  */
+@media only screen and (max-width: 600px){
   body {
     padding: 24px;
     gap: 24px;
   }
-
+/* 
   main{
     margin-bottom: 30px;
-  }
+  } */
 
   .options{
     display: none !important;
@@ -725,10 +731,10 @@ footer {
   .intro-para{
     font-size: 18px;
   }
-
-  .introduction{
-    margin-top: 30px;
-  }
+/*   
+  .contact-block{
+    margin-bottom: 30px;
+  } */
 
   .page-heading{
     font-size: 24px;
@@ -883,12 +889,11 @@ footer {
   .menu__btn {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 70px;
     right: 30px;
     width: 26px;
     height: 26px;
-  
     cursor: pointer;
     z-index: 1000;
   }
@@ -942,4 +947,5 @@ footer {
     transform: scale(1.1);
     color: #EA738DFF;
   }
+
 }
