@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -147,7 +146,6 @@ footer {
 }
 
 figure{
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -157,9 +155,7 @@ figure{
 .profile-pic-caption{
   font-size: 12px;
   text-align: center;
-  /* width: 70%; */
-  /* border: 1px solid; */
-  margin: 0;
+  align-self: center;
 }
 
 .code-block{
@@ -290,7 +286,7 @@ figure{
 }
 
 .intro-para{
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -391,7 +387,7 @@ figure{
 }
 
 .post-description, .project-description{
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 20px;
@@ -465,7 +461,7 @@ figure{
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  font-family: "DM Serif Display", serif;
+  font-family: "Noto Serif", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 21px;
@@ -553,10 +549,10 @@ article h1,
 article h2,
 article h3{
   font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
+  font-weight: 700;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-optical-sizing: auto;
+  font-variation-settings:"wdth" 100;
 }
 
 article h1{
@@ -571,19 +567,17 @@ article h2{
   font-size: 1.7rem;
   color: #6c3f8f;
   margin-top: 15px;
-  /* margin-bottom: 15px; */
 }
 
 article h3{
   font-size: 1.4rem;
   color: #8c65a3;
   margin-top: 8px;
-  /* margin-bottom: 10px; */
 }
 
 article p,
 article li{
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 20px;
@@ -641,7 +635,6 @@ article img {
   height: auto;
   margin: 20px 0;
   border-radius: 8px;
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 }
 
 article video {
@@ -690,7 +683,7 @@ footer {
     align-items: flex-start;
   }
 
-  .codepic-container img{
+  .codepic-container img, figcaption{
     display: none;
   }
 
