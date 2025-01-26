@@ -5,7 +5,7 @@ description: "Robots can be Study Buddies"
 technology: "MongoDB  •  React  •  Node JS  •  Express  •  Kotlin  •  OpenAI"
 ---
 
-# Talking Social Robot [![View Code](../images/github.svg)](https://github.com/maahma/Furhat-Study-Buddy)
+# Talking Social Robot [![Github](../images/github.svg)](https://github.com/maahma/Furhat-Study-Buddy "view code")
 
 Have you ever imagined studying with a robot that can talk to you, understand your emotions, and even help you plan your schedule? That’s exactly what my dissertation project aimed to achieve!
 

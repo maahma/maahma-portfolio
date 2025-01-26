@@ -548,7 +548,7 @@ article{
   line-height: 1.8;
 }
 
-article img:first-child{
+article h1 img{
   height: 45px;
   width: 45px;
 }
@@ -558,11 +558,11 @@ article img:first-child{
   100% {  transform: rotate(359deg); }
 }
 
-article img:first-child:hover{
+article h1 img{
   animation: spin 2s linear infinite;
 }
 
-article h1:first-child{
+article h1{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -856,7 +856,7 @@ footer {
     z-index: 2;
   }
 
-  article img:first-child{
+  article img:first-of-type{
     height: 35px;
     width: 35px;
   }

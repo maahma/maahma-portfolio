@@ -24,10 +24,10 @@ export default function Home() {
         </div>
 
         <div className="contact-block">
-          <a href="mailto:maahaahmad99@gmail.com"><Image className="mail" src="images/mail.svg" alt="mail-icon" width={35} height={35} /></a>
-          <a href="https://github.com/maahma" target="_blank"><Image className="github" src="images/github.svg" alt="git-icon" width={35} height={35}/></a>
-          <a href="https://www.linkedin.com/in/maaha-ahmad/" target="_blank"><Image className="linkedin" src="images/linkedin.svg" alt="linkedin-icon" width={35} height={35} /></a>
-          <a href="docs/MaahaCV.pdf" target="_blank" rel="noopener noreferrer"><Image className="cv-view" src="images/viewcv.svg" alt="cv-icon" width={35} height={35} /></a>
+          <a href="mailto:maahaahmad99@gmail.com" title="email"><Image className="mail" src="images/mail.svg" alt="mail-icon" width={35} height={35} /></a>
+          <a href="https://github.com/maahma" target="_blank" title="github"><Image className="github" src="images/github.svg" alt="git-icon" width={35} height={35}/></a>
+          <a href="https://www.linkedin.com/in/maaha-ahmad/" target="_blank" title="linkedIn"><Image className="linkedin" src="images/linkedin.svg" alt="linkedin-icon" width={35} height={35} /></a>
+          <a href="docs/MaahaCV.pdf" target="_blank" rel="noopener noreferrer" title="cv"><Image className="cv-view" src="images/viewcv.svg" alt="cv-icon" width={35} height={35} /></a>
         </div>
       </div>
     </main>
