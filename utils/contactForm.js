@@ -19,10 +19,10 @@ export default function HireMe(){
         const data = await response.json();
 
         if (data.success) {
-        setResult("Form Submitted Successfully");
+        setResult("Message Sent 😊");
         event.target.reset();
         } else {
-        console.log("Error", data);
+        console.log("Error sending message 💀", data);
         setResult(data.message);
         }
     };

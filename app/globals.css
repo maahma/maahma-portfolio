@@ -856,9 +856,18 @@ footer {
     z-index: 2;
   }
 
-  article img:first-of-type{
-    height: 35px;
-    width: 35px;
+  article h1 img{
+    height: 45px;
+    width: 45px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% {  transform: rotate(359deg); }
+  }
+  
+  article h1 img{
+    animation: spin 2s linear infinite;
   }
 
   article h1{
