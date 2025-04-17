@@ -17,7 +17,7 @@ export default function RootLayout({
 
   const footer = (
     <footer>
-      <p>Made with <Image className="heart-footer" src="/images/contact-icons/heart-footer.svg" height={15} width={15} alt="heart-image"/> by <a href="https://www.linkedin.com/in/maaha-ahmad/" target="_blank">Maaha Ahmad</a></p>
+      <p>Made with <Image className="heart-footer" src="images/contact-icons/heart-footer.svg" height={15} width={15} alt="heart-image"/> by <a href="https://www.linkedin.com/in/maaha-ahmad/" target="_blank">Maaha Ahmad</a></p>
     </footer>
   )
 
