@@ -16,7 +16,7 @@ export default function RootLayout({
 
   const footer = (
     <footer>
-      <p>Made with 💜 by <a href="https://www.linkedin.com/in/maaha-ahmad/" target="_blank">Maaha Ahmad</a></p>
+      <p>Made with <img className="heart-footer" src="/images/contact-icons/heart-footer.svg" /> by <a href="https://www.linkedin.com/in/maaha-ahmad/" target="_blank">Maaha Ahmad</a></p>
     </footer>
   )
 
@@ -26,9 +26,13 @@ export default function RootLayout({
         <link rel="icon" href="/icon.png" sizes="any" />
       </head>
       <body>
-        <NavBar />
-        {children}
-        {footer}
+
+        <div className="main-body">
+          <NavBar />
+          {children}
+          {footer}
+        </div>
+            
       </body>
     </html>
   );

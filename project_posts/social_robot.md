@@ -5,7 +5,9 @@ description: "Robots can be Study Buddies"
 technology: "MongoDB  •  React  •  Node JS  •  Express  •  Kotlin  •  OpenAI"
 ---
 
-# Talking Social Robot [![Github](../images/github.svg)](https://github.com/maahma/Furhat-Study-Buddy "view code")
+# Talking Social Robot
+
+<!-- [![Github](../images/github.svg)](https://github.com/maahma/Furhat-Study-Buddy "view code") -->
 
 Have you ever imagined studying with a robot that can talk to you, understand your emotions, and even help you plan your schedule? That’s exactly what my dissertation project aimed to achieve!
 
@@ -19,10 +21,10 @@ Before I dive into the specifics, see the project in action:
 </video>
 Project code [here](https://github.com/maahma/Furhat-Study-Buddy)
 
-## **The Core Components**
+## The Core Components
 The project consisted of 3 main components :
 
-### **MERN Application**
+### MERN Application
 I chose MERN stack for the application for its popularity and extensive community support, which provided helpful tutorials during development. The MERN stack consists of the following four technologies:
 - **MongoDB**: A NoSQL database used to store and manage application data.
 - **React**: A JavaScript library for building the front-end user interface.
@@ -31,12 +33,12 @@ I chose MERN stack for the application for its popularity and extensive communit
 
 This full-stack web app forms the backbone of the system, and provides an interface for students to manage their class schedules, track assignment deadlines and generate study plans and quizzes
 
-### **Furhat Robot**
+### Furhat Robot
 Furhat is a social robot designed to engage with users using lifelike facial gestures and speech. In this project, it acted as a study buddy by:
 - Quizzing students on their notes to reinforce learning
 - Performing calming exercises like guided breathing, gratitude reflection, and emotion regulation to support mental well-being
 
-### **FaceReader Software**
+### FaceReader Software
 Developed by Noldus, FaceReader detects and analyzes the six universal expressions: happy, sad, angry, surprised, scared, and disgusted, plus contempt and a neutral state. In this project, it played a crucial role by detecting signs of stress, such as sadness, anger, or fear, and alerting Furhat to initiate calming exercises to help students relax.
 
 ## Interaction between Components
@@ -55,19 +57,19 @@ The Furhat Robot received requests from the MERN application. These requests dic
 
 When the user started a study session, the MERN application notified the FaceReader software to begin analyzing the user's emotions. If FaceReader detected a stress-related emotion, it sent a response back to the MERN application. The MERN application then relayed a request to Furhat to initiate an appropriate calming activity, helping the user relax.
 
-## **The Power of OpenAI’s GPT**
+## The Power of OpenAI’s GPT
 To add intelligence to the system, I integrated OpenAI’s Large Language Model (LLM). Here’s how they were used:
 - **Generating Study Schedules:** Using the Chat Completions API, personalized study plans were generated based on users’ class schedules and deadlines. These plans outlined specific tasks for each study session
 - **Generating Quizzes:**  Questions derived from user-submitted notes made interactive learning sessions possible
 - **Furhat’s Conversations:** LLM powered the robot’s responses during calming activities, enabling it to engage empathetically and naturally
 
-## **Prompt Engineering: Making It Work**
+## Prompt Engineering: Making It Work
 Getting the best results from OpenAI required carefully crafted prompts. This process, known as **prompt engineering**, ensured that the outputs were accurate and useful. Key strategies for writing well-designed prompts include crafting clear and specific instructions, breaking complex tasks into manageable steps, and systematically testing and refining the prompts.
 
 For generating a study schedule, I designed the prompt(shown below) to include all the necessary details, such as the start and end times, tasks for each session, and the desired format for the output. This ensured I could easily extract relevant details and display them on the user interface. 
 ![Prompt for generating a study schedule for the week](../post-imgs/final-prompt.png)
 
-## **Why This Project Matters**
+## Why This Project Matters
 Have you ever wondered why it’s so hard to remember what you studied just a few days ago? German psychologist Hermann Ebbinghaus was curious about this too, which led him to uncover the _Forgetting Curve_.
 ![Hermann Ebbinghaus's Forgetting Curve](../post-imgs/forgetting-curve.png)
 

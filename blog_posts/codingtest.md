@@ -3,14 +3,16 @@ title: "Preparing for coding interviews"
 category: "🕵️‍♀️ job search"
 description: "How I use leetcode to land a job"
 ---
-# Preparing for coding interviews [![Github](../images/github.svg)](https://github.com/maahma/Python-Data-Structures-and-Algorithms "view code")
+# Preparing for coding interviews 
+
+<!-- [![Github](../images/github.svg)](https://github.com/maahma/Python-Data-Structures-and-Algorithms "view code") -->
 
 The best way to practice for coding interviews is by solving **LeetCode** questions. While there are other platforms like **HackerRank** and **GeeksforGeeks** that offer similar problem sets, **LeetCode is by far the most popular and widely used** for interview preparation.
 
-## **How I'm Starting My LeetCode Journey**
+## How I'm Starting My LeetCode Journey
 I was initially confused about how to approach LeetCode. Should I take a **Data Structures & Algorithms (DSA)** course first, or should I start solving questions topic by topic? While I had sufficient DSA knowledge from my bachelor's degree, I needed a refresher. After some research, I realized that **actively solving problems** was the most effective way to regain and strengthen my understanding.
 
-## **LeetCoding Strategy**
+## LeetCoding Strategy
 After scouring **Reddit** (yes, it does have useful content), I curated a structured approach to LeetCode:
 - **Mix different topics** instead of spending a whole week on arrays and another on linked lists.
 - **Weekends for theory, weekdays for implementation** – study proofs, patterns, and concepts on weekends and apply them during the week.
@@ -25,7 +27,7 @@ After scouring **Reddit** (yes, it does have useful content), I curated a struct
     - **Hard** – 45 minutes
 - **If stuck,** check the discussion board for hints but **don’t look at the full solution immediately.** Restart the timer and try again. If still stuck, review the solution, take notes, and mark it for revision.
 
-## **Daily LeetCode Plan (4-5 Hours Per Day)**
+## Daily LeetCode Plan (4-5 Hours Per Day)
 To maximize efficiency, I structured my daily LeetCode practice as follows:
 - **Easy questions** – 4 per day
 - **Medium questions** – 3-4 per day

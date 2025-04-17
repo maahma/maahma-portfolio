@@ -2,36 +2,22 @@ import React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import HamburgerMenu from "../utils/hamburgerMenu"
+import Nav from "../utils/nav"
 
 const NavBar = () => {
 
     return (
         <div className="nav-bar">
             <Link href="/">
-                <h1>maaha ahmad</h1>
+                <div className="nav-title">
+                    <Image src="/images/elements/M2.png" className="M-title" />
+                    <h1 className="name">aaha</h1>
+                </div>
             </Link>
 
             <HamburgerMenu />
+            <Nav />
 
-            <ul className="options">
-                <li className="option">
-                    <Link href={`/projects`}>
-                        <p>projects</p>
-                    </Link>
-                </li>
-
-                <li className="option">
-                    <Link href={`/blog_posts`}>
-                        <p>posts</p>
-                    </Link>
-                </li>
-
-                <li className="option">
-                    <Link href="/hire-me">
-                        <p className="hire-me-button"><Image className="sparkle-1" src="images/sparkles.svg" alt="sparkle-icon" width={35} height={35} />hire-me<Image className="sparkle-2" src="images/sparkles.svg" alt="sparkle-icon"  width={35} height={35}  /></p>
-                    </Link>
-                </li>
-            </ul>
         </div>
     )
 }

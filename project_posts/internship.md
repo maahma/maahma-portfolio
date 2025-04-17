@@ -5,7 +5,8 @@ description: "Machine Learning meets the Business Sector"
 technology: "Python  •  Linux  •  Numpy  •  NLTK"
 ---
 
-# Machine Learning Internship [![Github](../images/github.svg)](https://github.com/maahma/Speech_Language_Internship "view code")
+# Machine Learning Internship
+<!-- [![Github](../images/github.svg)](https://github.com/maahma/Speech_Language_Internship "view code") -->
 For the past 1.5 months, I've been working as an intern under Dr Chaona Chen, lecturer in Robotics, and Dr Junhong Yang, Senior lecturer in Finance, at the University of Sheffield, on a cross department project to analyze the emotional states of company managers during conference calls
 
 The objectives of the internship:

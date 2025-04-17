@@ -1,5 +1,7 @@
 "use client"
 import React, {useState} from "react"
+// import BunnyGarden from "./bunnyGarden"
+import CatFace from "./catFace"
 export default function HireMe(){
 
     const [result, setResult] = React.useState("");
@@ -27,26 +29,44 @@ export default function HireMe(){
         }
     };
 
+
     return(
         <div className="hire-me-form">
-            <div className="hireme-sidetext">
-                <h2>Fill in the form to get in touch!</h2>
-                <p className="hire-me-p">I'll get back to you as soon as I can 🌞</p>
+            <div className="first-rect-form">
+                Contact Me ¯\_(ツ)_/¯
             </div>
-             
-            <form onSubmit={onSubmit}>
-                {/* <label className="label name" htmlFor="name">Name</label> */}
-                <input className="input-name" type="text" id="name" name="name" placeholder="Name" required />
 
-                {/* <label className="label email" htmlFor="email">Email</label> */}
-                <input className="input-email" type="text" id="email" name="email" placeholder="Email" required />
+            <div className="form-container">
+                <CatFace />
 
-                {/* <label className="label message" htmlFor="message">Message</label> */}
-                <textarea className="messagetext" id="message" name="message" placeholder="Your message here..." required></textarea>
+                <form onSubmit={onSubmit}>
+                    <h2 className="hire-me-h2">Hi there...</h2>
+                    <h2 className="hire-me-h2">Fill in the form to get in touch!</h2>
+                    
+                    <div className="form-div">
+                        <label htmlFor="name">Name</label>
+                        <input className="input-name" type="text" id="name" name="name" required />
+                    </div>
+                
+                    <div className="form-div">
+                        <label htmlFor="email">Email</label>
+                        <input className="input-email" type="email" id="email" name="email" required />
+                    </div>
 
-                <button className="submitbutton" type="submit">Send Message</button>
-            </form>
-            <span className="result-form">{result}</span>
+                    <div className="form-div">
+                        <label htmlFor="message">Message</label>
+                        <textarea className="messagetext" id="message" name="message" required></textarea>
+                    </div>
+
+                    <button className="submitbutton" type="submit">
+                        <span className="submitbutton-txt">Send Message</span>
+                    </button>
+                
+                    <span className="result-form">{result}</span>
+
+                </form>
+            </div>
+
         </div>
     )
 }
