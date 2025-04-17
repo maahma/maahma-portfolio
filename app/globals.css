@@ -1186,7 +1186,7 @@ footer {
     height: 26px;
     cursor: pointer;
     z-index: 1000;
-    /* border: 1px solid black; */
+    background-color: #fdf5f0;
   }
   
   .menu__btn > span,
