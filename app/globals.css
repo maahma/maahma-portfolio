@@ -1028,6 +1028,10 @@ footer {
     height: 40px;
   }
 
+  .pixel-arrow{
+    height: 30px;
+  }
+
   .codepic-container{
     flex-direction: column;
     justify-content: flex-start;
