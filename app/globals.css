@@ -1121,42 +1121,73 @@ footer {
     transition: all .3s ease-in-out;
   }
   
+  
 
-  article h1 img{
+  .article-heading{
+    font-size: 19px;
+  }
+  
+  .article-second-rect-text{
+    font-size: 23px;
+    padding: 12px 0px 10px 15px;
+  }
+  
+  
+  .markdown-content h1{
+    font-size: 35px;
+  }
+  
+  .markdown-content h1 img{
     height: 45px;
     width: 45px;
   }
   
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% {  transform: rotate(359deg); }
-  }
   
-  article h1 img{
-    animation: spin 2s linear infinite;
-  }
-
-  article h1{
+  .markdown-content h2{
     font-size: 1.7rem;
   }
   
-  article h2{
-    font-size: 1.4rem;
+  .markdown-content h3{
+    font-size: 1.3rem;
   }
   
-  article h3{
-    font-size: 1.2rem;
-  }
-  
-  article p,
-  article li{
-    font-size: 17px;
+  .markdown-content p,
+  .markdown-content li{
+    font-size: 20px;
   } 
-
-  article ul{
-    /* border: 1px solid black; */
-    margin-left: 0px;
+  
+  
+  .markdown-content ul,
+  .markdown-content ol{
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    background-color: white;
   }
+  
+  .markdown-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .markdown-content video {
+    max-width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   #menu__toggle {
     opacity: 0;
