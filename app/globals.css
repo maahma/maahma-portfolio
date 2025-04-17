@@ -1131,6 +1131,10 @@ footer {
     font-size: 23px;
     padding: 12px 0px 10px 15px;
   }
+
+  .markdown-content{
+    padding: 20px 20px;
+  }
   
   
   .markdown-content h1{
@@ -1153,16 +1157,15 @@ footer {
   
   .markdown-content p,
   .markdown-content li{
-    font-size: 20px;
+    font-size: 16px;
   } 
   
   
   .markdown-content ul,
   .markdown-content ol{
-    margin-left: 20px;
-    padding-left: 20px;
+    /* margin-left: 20px;
+    padding-left: 20px; */
     margin-bottom: 16px;
-    background-color: white;
   }
   
   .markdown-content img {

@@ -63,7 +63,7 @@ export default function ProjectPage(props){
                         <li>File</li>
                         <li>Edit</li>
                         <li>View</li>
-                        <li>Settings</li>
+                        {/* <li>Settings</li> */}
                     </ul>
 
                     <div className="markdown-content">
