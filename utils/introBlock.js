@@ -27,7 +27,7 @@ export default function introBlock(){
                     <li><span className="first-char">F</span>ile</li>
                     <li><span className="first-char">E</span>dit</li>
                     <li><span className="first-char">V</span>iew</li>
-                    <li><span className="first-char">H</span>elp</li>
+                    {/* <li><span className="first-char">H</span>elp</li> */}
                 </ul>
             </div>
 

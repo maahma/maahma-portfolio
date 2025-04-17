@@ -72,7 +72,6 @@ html, body {
   height: 100%;
 }
 
-/* body { */
 .main-body{
   display: flex;
   flex-direction: column;
@@ -143,8 +142,6 @@ main {
 .nav-title {
   display: flex;
   align-items: flex-end;
-  /* position: relative; */
-
   justify-content: center;
   padding-top: 12px;
 }
@@ -167,13 +164,11 @@ main {
 .intro-window{
   border: 3px solid black;
   width: 50%;
-  /* background-color: #fef1eb; */
   min-height: 600px;
 }
 
 .first-rect{
   background-image: linear-gradient(to right, #2644ca, #ec6ead);
-  /* height: 50px;  */
   border: 2px solid black;
   margin: 10px;
   margin-bottom: 5px;
@@ -1000,7 +995,6 @@ footer {
 
 
 @media (min-width: 640px) {
-  /* body { */
   .main-body{
     padding: 0px 24px;
     gap: 24px;
@@ -1030,8 +1024,8 @@ footer {
   }
 
   .contact-block img{
-    width: 53px;
-    height: 53px;
+    width: 40px;
+    height: 40px;
   }
 
   .codepic-container{
@@ -1043,6 +1037,10 @@ footer {
 
   .intro-window{
     width: 100%;
+  }
+
+  .third-rect p {
+    font-size: 30px;
   }
 
   .profile-pic-container{
