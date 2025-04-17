@@ -11,24 +11,24 @@
 /* FONTS */
 @font-face {
   font-family: 'EIVEN-MAJOR-Pixel';
-  src:url('/fonts/webfonts_EIVEN-MAJOR-Pixel/EIVEN-MAJOR-Pixel.ttf.woff') format('woff'),
-      url('/fonts/webfonts_EIVEN-MAJOR-Pixel/EIVEN-MAJOR-Pixel.ttf.svg#EIVEN-MAJOR-Pixel') format('svg'),
-      url('/fonts/webfonts_EIVEN-MAJOR-Pixel/EIVEN-MAJOR-Pixel.ttf.eot'),
-      url('/fonts/webfonts_EIVEN-MAJOR-Pixel/EIVEN-MAJOR-Pixel.ttf.eot?#iefix') format('embedded-opentype'); 
+  src:url('/maahma-portfolio/fonts/webfonts_EIVEN-MAJOR-Pixel/EIVEN-MAJOR-Pixel.ttf.woff') format('woff'),
+      url('/maahma-portfolio/fonts/webfonts_EIVEN-MAJOR-Pixel/EIVEN-MAJOR-Pixel.ttf.svg#EIVEN-MAJOR-Pixel') format('svg'),
+      url('/maahma-portfolio/fonts/webfonts_EIVEN-MAJOR-Pixel/EIVEN-MAJOR-Pixel.ttf.eot'),
+      url('/maahma-portfolio/fonts/webfonts_EIVEN-MAJOR-Pixel/EIVEN-MAJOR-Pixel.ttf.eot?#iefix') format('embedded-opentype'); 
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SABETH-PIXEL-REGULAR';
-  src:url('/fonts/sabeth-pixel-font/SabethpixelRegularDemo-yYqe3.otf'); 
+  src:url('/maahma-portfolio/fonts/sabeth-pixel-font/SabethpixelRegularDemo-yYqe3.otf'); 
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'UGLY-BYTE';
-  src:url('/fonts/ugly-byte-font/UglyByteFreeTrial-K7EBZ.otf'); 
+  src:url('/maahma-portfolio/fonts/ugly-byte-font/UglyByteFreeTrial-K7EBZ.otf'); 
   font-weight: normal;
   font-style: normal;
 }
@@ -36,24 +36,24 @@
 
 @font-face {
   font-family: 'ATLANTIS';
-  src: url('/fonts/atlantis/AtlantisText-Bold.otf'),
-  url('/fonts/atlantis/AtlantisText-Bold.ttf'),
-  url('/fonts/atlantis/AtlantisText-Regular.otf'),
-  url('/fonts/atlantis/AtlantisText-Regular.ttf'); 
+  src: url('/maahma-portfolio/fonts/atlantis/AtlantisText-Bold.otf'),
+  url('/maahma-portfolio/fonts/atlantis/AtlantisText-Bold.ttf'),
+  url('/maahma-portfolio/fonts/atlantis/AtlantisText-Regular.otf'),
+  url('/maahma-portfolio/fonts/atlantis/AtlantisText-Regular.ttf'); 
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ASCELLA-PIXEL';
-  src:url('/fonts/ascella-pixel-font/AscellapixelRegular-E4rLl.otf'); 
+  src:url('/maahma-portfolio/fonts/ascella-pixel-font/AscellapixelRegular-E4rLl.otf'); 
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'RAINY-HEARTS';
-  src:url('/fonts/rainyhearts/rainyhearts.ttf'); 
+  src:url('/maahma-portfolio/fonts/rainyhearts/rainyhearts.ttf'); 
   font-weight: normal;
   font-style: normal;
 }
