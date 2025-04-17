@@ -33,7 +33,7 @@ export default function HireMe(){
     return(
         <div className="hire-me-form">
             <div className="first-rect-form">
-                Contact Me ¯\_(ツ)_/¯
+                Contact Me :)
             </div>
 
             <div className="form-container">

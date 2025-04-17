@@ -1010,10 +1010,6 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
   }
-
-  /* .postCard, .projectCard {
-    padding: 24px;
-  } */
 }
 
 
@@ -1067,7 +1063,7 @@ footer {
   }
 
   .page-heading{
-    font-size: 24px;
+    font-size: 58px;
   }
 
   .postsContainer, .projectsContainer {
@@ -1080,15 +1076,15 @@ footer {
   }
 
   .post-title, .project-title{
-    font-size: 20px;
+    font-size: 37px;
   }
   
   .post-description, .project-description{
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .project-technology{
-    font-size: 15px;
+    font-size: 17px;
     color: #1787d7 !important;
   }
 
@@ -1108,23 +1104,13 @@ footer {
     gap: 10px;
   }
 
-
   input, textarea, .submitbutton{
     font-size: 17px;
-  }
-
-  .hireme-sidetext h2{
-    font-size: 24px;
-  }
-
-  .hireme-sidetext p{
-    font-size: 18px;
   }
 
   form {
     width: 100%;
   }
-
 
 
   .hire-me-button{
@@ -1194,7 +1180,7 @@ footer {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 125px;
+    top: 100px;
     right: 60px;
     width: 26px;
     height: 26px;
